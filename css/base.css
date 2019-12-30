@@ -1,0 +1,471 @@
+.w {
+ 	width: 1190px;
+ 	margin: auto;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+.style-red {
+	color: #f10215!important;
+}
+li {
+	list-style: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	vertical-align: top;   /*去除图片底部缝隙，因为图片和基线对齐*/
+}
+input, button {
+	padding: 0;
+	border: 0;
+}
+a {
+	text-decoration: none;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?axvffw');
+  src:  url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?axvffw') format('truetype'),
+    url('../fonts/icomoon.woff?axvffw') format('woff'),
+    url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clearfix:before,.clearfix:after { 
+  content:"";
+  display:table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+.clearfix:after {
+ clear:both;
+}
+.clearfix {
+  *zoom:1;
+}
+h5,p, h1 {
+	margin: 0;
+}
+body {
+	background-color: #F6F6F6;
+}
+/* 京东 顶部 start */
+.J_event {
+	background-color: #000;
+}
+.J_event a {
+	display: block;
+	height: 80px;
+	background: url(../images/top.jpg) no-repeat;
+	position: relative;
+}
+.J_event a i {
+	width: 20px;
+	height: 20px;
+	/* background-color: pink; */
+	position: absolute;
+	right: 0;
+	top: 5px;
+	font-family: "icomoon";
+	font-style: normal;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+}
+/* 京东 顶部 end */
+
+.shortcut {
+	height: 30px;
+	line-height: 30px;
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #DDDDDD;
+	color: #9D9D9D;
+	font-size: 12px;
+}
+.shortcut a {
+	color: #9D9D9D;
+	font-size: 12px;
+	text-decoration: none;
+}
+.shortcut a:hover {
+	color: #c81623;
+}
+.pos {
+	font-family: "icomoon";
+	font-style: normal;
+	font-size: 14px;
+	color: #f10215;
+}
+.shortcut .fl li {
+	margin-left: 200px;
+	height: 30px;
+	overflow: hidden;
+}
+.shortcut .fr li {
+	float: left;
+}
+.spacer {
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin: 10px 10px 0;
+}
+.dropdown {
+	padding-right: 15px;
+	position: relative;
+}
+.dropdown i {
+	font-family: "icomoon";
+	font-style: normal;
+	font-size: 16px;
+	position: absolute;
+	right: -2px;
+	top: -2px;
+}
+.erweima {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ccc;
+	padding: 3px;
+	position: absolute;
+	left: -8px;
+    top: 35px;
+}
+/*  header 部分 start  */
+.header {
+	height: 140px;
+	
+}
+.inner {
+	height: 140px;
+	/*background-color: pink;*/
+	position: relative;
+}
+.logo {
+	width: 190px;
+	height: 170px;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+	
+}
+.logo a {
+	display: block;
+		width: 190px;
+	height: 170px;
+	text-indent: -4em;
+	background: url(../images/logo.jpg);
+	overflow: hidden;
+}
+.logo h1 {
+	margin: 0;}
+	.search {
+		width: 440px;
+		height: 26px;
+		position: absolute;
+		left: 317px	;
+		top: 29px;
+		background-color: black;
+	}
+	.search input {
+		width: 394px;
+		height: 28px;
+		border:1px solid #f10215;
+		padding: 0 0 0 3px;
+		outline: none;
+		color: #989898;
+		float: left;
+	}
+	input,button {
+		padding: 0;
+		border:0;
+	}
+	.search button {
+		width: 41px;
+		height: 29px;
+		background-color: #f10215;
+		float: left;
+		cursor: pointer;
+		outline: none;
+	}
+	.search i {
+		font-family: "icomoon";
+		color: #fff;
+		font-size: 15px;
+		font-style: normal;
+	}
+	.search em {
+		background: url(../images/sprite-search.png);
+		position: absolute;
+		top: 7px;
+		right: 46px;
+		width: 19px;
+		height: 15px;
+		cursor: pointer;
+	}
+	.search em:hover {
+		background-position: -30px 0;
+	}
+	.hotwords {
+		position: absolute;
+		top: 61px;
+		left:318px;
+	}
+	.hotwords a {
+		color: #b3b3b3;
+		font-size: 12px;
+	}
+	.hotwords a:hover {
+		color:#f10215;
+	}
+	.mycar {
+width: 150px;
+height: 27px;
+border:1px solid #cccccc;
+position: absolute;
+top:29px;
+left: 800px;
+text-align: center;
+line-height: 27px;
+	}
+	
+	.mycar a {
+		font-size: 12px;
+		color:#f10215;
+	}
+	.mycar i {
+		color: #f10215;
+		font-family: "icomoon";
+		font-style: normal;
+	}
+	.mycar s {
+		background-color:#f10215;
+		position: absolute;
+		top: 5px;
+		left: 114px; /*左对齐，这样子多出去的数字会往右边靠*/
+		height: 16px;
+		line-height: 16px;
+		text-decoration: none;
+		font-size: 12px;
+		padding: 0 4px;
+        border-radius: 6px;
+
+	}
+	.computer {
+		position: absolute;
+		right: 0;
+		bottom: 10px;
+
+	}
+	.navitems {
+		position: absolute;
+		left:218px;
+		bottom: 0;
+	}
+	.navitems ul {
+        float:left;
+	}
+	.navitems ul li {
+        float:left;
+        margin-left: 30px;
+	}
+	.navitems li a {
+		font-size: 16px;
+		height: 40px;
+		line-height: 40px;
+		color: #555A5f;
+		font-weight: 700;
+	}
+	.navitems li a:hover {
+		color:#f10215;
+	}
+	.navitems .spacer {
+		float: left;
+		margin-top: 15px;
+		margin-left: 20px;
+		margin-right: -10px;
+	}
+	.footer {
+		height: 560px;
+		background-color: #eaeaea;
+
+	}
+	.footer-service {
+		height: 100px;
+		border:1px solid #dedede;
+	}
+	.footer-service-inner {
+		/*height: 100px;*/
+		/*background-color: pink;*/
+		padding: 30px 0;
+		/*overflow:hidden;*/
+	}
+	.footer-service-inner li {
+		float: left;
+		width: 297px;
+		height: 42px;
+	/*	background-color: purple;*/
+	}
+	.service_uint {
+		width: 225px;
+		height: 42px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.service_uint h5 {
+		width: 36px;
+		height: 42px;
+	    background: url(../images/ico.png) no-repeat;
+	
+		position: absolute;
+		top:0;
+		left: 0;
+		text-indent: -999px;
+		overflow: hidden;
+	}
+	.service_uint p {
+		line-height: 42px;
+        margin-left: 45px;
+        font-size: 18px;
+        font-weight: 700;
+	}
+	.service_uint .quick {
+	background-position: 0 -43px;
+	}
+	.service_uint .good {
+		background-position: 0 -86px;
+	}
+	.service_uint .cheap {
+		background-position: 0 -129px;
+	}
+	/*帮助模块*/
+	.help {
+		height: 180px;
+		/*background-color: pink;*/
+		padding-top: 20px;
+	}
+	.help  dt {
+       font-weight: 700;
+       font-size: 14px;
+       color:#66667a;
+       height: 28px;
+       line-height: 28px;
+	}
+	.help dd a {
+		font-weight: 400;
+		font-size: 12px;
+		color:#66667a;
+	}
+	.help dd {
+		height: 22px;
+	}
+	.help dd a:hover {
+		color:#f10215;
+	}
+	.help dl {
+		float: left;
+		width: 190px;
+	}
+	.help .cover {
+		float: right;
+		width: 207px;
+		height: 150px;
+        background:url(../images/ico_footer.png) no-repeat;
+	}
+	.cover dt {
+		text-align: center;
+
+	}
+	.help .info {
+		width: 175px;
+		height: 50px;
+		font-size: 12px;
+		margin-top: 5px;
+		margin-left: 10px;
+		line-height: 20px;
+		color:#666666;
+	}
+    .help .look {
+    	text-align: right;
+    	padding-right: 10px;
+    	
+
+    }
+    .copyright {
+    	border-top: 1px solid #cdccd1;
+    	padding-top: 15px;
+
+    }
+    .links {
+    	text-align: center;
+    }
+    .links a {
+    	color: #727272;
+    	font-size: 12px;
+    }
+    .links a:hover {
+    	color: #f10215;
+    }
+    .links span {
+    	font-size: 12px;
+    	color: #d4cdcd;
+    	margin: 0 3px;
+    }
+    .c-info p {
+    	display: inline-block;
+    	font-size: 12px;
+    	font-weight: 400;
+    	color:#a3a099;
+
+    }
+    .c-info {
+    	text-align: center;
+    	margin-top: 5px;
+    	line-height: 22px;
+    }
+    .c-info a {
+    	font-size: 12px;
+    	color: #a3a099;
+    }
+    .c-info a:hover {
+    	color: #f10215;
+    }
+    .c-info span {
+    	font-size: 12px;
+    	color: #d4cdcd;
+    	margin: 0px 3px;
+    }
+    .img {
+    	text-align: center;
+    	margin-top: 10px;
+    }
+    .img a {
+    	width: 103px;
+    	height: 32px;
+    	display: inline-block;
+    	background: url(../images/ico_footer.png) no-repeat 0 -151px;
+    	margin:0 5px;
+
+    }
+    .img .kexin {
+    	background-position: -103px -151px;
+    }
+    .img .jc {
+    	background-position: 0 -184px;
+    }
+    .img .cx {
+    	background-position: -104px -184px;
+    }
+    .img .zg {
+    	background-position: 0 -216px;
+    }
+    .img .wl {
+    	background-position: -104px -216px;
+    }

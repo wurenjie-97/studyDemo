@@ -1,0 +1,420 @@
+/*@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7kkyc2');
+  src:  url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+.jd {
+    /*height: 480px;    如果写高度，图片不会显示bg*/
+    /*background-color: pink;*/
+    position: relative;
+}
+
+.jd_inner {
+    height: 480px;
+    /*background-color: purple;*/
+    position: relative;
+    z-index: 1;
+    /*因为被覆盖，所以这个也要加定位 权重变高1*/
+}
+
+.ad {
+    height: 480px;
+    background: url(../images/bg.png) no-repeat top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*定位自动转换为行内块 需要加宽度才会显示*/
+}
+
+.ad a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.jd-clo1 {
+    width: 190px;
+    height: 476px;
+    background-color: #6e6568;
+    float: left;
+    padding-top: 4px;
+}
+
+.jd-clo1 li {
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.jd-clo1 li:hover {
+    background-color: #999395;
+}
+
+.jd-clo1 li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.jd-clo1 li a:hover {
+    color: #f10215;
+}
+
+.jd-clo1 li span {
+    color: #fff;
+    font-size: 12px;
+}
+
+.jd-clo2 {
+    width: 790px;
+    height: 480px;
+    /* background-color: yellow;*/
+    float: left;
+    margin-left: 10px;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/* .jd-clo2-hd {
+    height: 340px;
+    background-color: yellow;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.jd-clo2-hd ol {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.jd-clo2-hd ol li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin: 4px 5px;
+    cursor: pointer;
+} */
+
+
+/* .jd-clo2-hd .current {
+    background-color: #f10215;
+} */
+
+.jd-clo2-bd div {
+    width: 390px;
+    height: 130px;
+    float: left;
+    position: relative;
+}
+
+.jd-clo2-bd div img {
+    width: 100%;
+}
+
+.jd-clo2-bd div:hover::after {
+    content: "";
+    position: absolute;
+    border: 20px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.jd-clo2-bd .firstpic {
+    margin-right: 10px;
+}
+
+.arr-l,
+.arr-r {
+    font-family: "icomoon";
+    width: 25px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.arr-l {
+    left: 0;
+    padding-left: 5px;
+}
+
+.arr-r {
+    right: 0;
+    padding-right: 5px;
+}
+
+.jd-clo3 {
+    width: 190px;
+    height: 480px;
+    /* background-color: red;*/
+    float: left;
+    margin-left: 10px;
+}
+
+.jd-clo3 a {
+    font-size: 12px;
+    color: #747474;
+}
+
+.user {
+    height: 115px;
+    /*background-color: pink;*/
+    padding: 20px 15px 0;
+    position: relative;
+}
+
+.user-info {
+    height: 40px;
+    padding-left: 54px;
+    font-size: 12px;
+    color: #747474;
+    line-height: 22px;
+}
+
+.user-info a:hover {
+    color: #f10215;
+}
+
+.user-profit {
+    margin-top: 10px;
+}
+
+.user-profit .profit-one {
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e1251b;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.user-profit .profit-one:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.user-profit .profit-two {
+    width: 70px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #363634;
+    color: #e5d790;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.profit-two:hover {
+    background-color: #f10215;
+}
+
+.info-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+}
+
+.info-img img {
+    width: 100%;
+    height: auto;
+    /*会跟着宽度一起缩放*/
+    border-radius: 50%;
+}
+
+
+/*让图片也变这么大*/
+
+.news {
+    height: 149px;
+    /*background-color: red;*/
+    border-top: 1px solid red;
+    padding: 5px 15px 0;
+}
+
+.tab-head {
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    position: relative;
+}
+
+.cuxiao {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.tab-head a {
+    margin: 0 5px;
+}
+
+.news .moreq {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.line {
+    width: 28px;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.tab-body {
+    margin-top: 10px;
+}
+
+.tab-body li {
+    height: 23px;
+    line-height: 23px;
+}
+
+.jd-service {
+    height: 209px;
+    overflow: hidden;
+}
+
+.jd-service li {
+    width: 47px;
+    height: 63px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.jd-service ul {
+    width: 195px;
+}
+
+.jd-service li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.jd-service li a i {
+    display: block;
+    width: 20px;
+    height: 21px;
+    margin: 15px auto 8px;
+    background: url(../images/service.png) no-repeat;
+    background-position: -4px -89px;
+}
+
+.jd-service li a p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: -4px;
+}
+
+.jd-service .jipiao {
+    background-position: -2px -46px;
+}
+
+.jd-service .jiudian {
+    background-position: -48px -91px;
+}
+
+.jd-service .huochepiao {
+    background-position: -92px -89px;
+}
+
+.jd-service .qiyegou {
+    background-position: -90px -45px;
+}
+
+.jd-service .jiayouka {
+    background-position: -2px -1px;
+}
+
+.jd-service .dianyingpiao {
+    background-position: -46px -44px;
+}
+
+.jd-service .youxi {
+    background-position: -90px 0px;
+}
+
+.jd-service .zhongchou {
+    background-position: -135px 0;
+}
+
+.jd-service .licai {
+    background-position: -135px -46px;
+}
+
+.jd-service .baitiao {
+    background-position: -48px -2px;
+}
+
+.jd-service .lipinka {
+    background-position: -134px -87px;
+}
